@@ -1,0 +1,68 @@
+.box {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 1080px;
+	width: 1920px;
+	overflow: hidden;
+	/* background-color: hsl(255, 43%, 49%); */
+}
+
+.overpass1,
+.overpass2 {
+}
+
+.overpass1 {
+	position: absolute;
+	z-index: 2;
+	/* background-color: hsla(40deg, 3%, 83%, 0.95); */
+	background-image: linear-gradient(
+		100deg,
+		hsla(201, 32%, 91%, 0.8) 0%,
+		hsla(203, 20%, 87%, 0.9) 100%
+	);
+	top: 0;
+	right: 0;
+	width: 320px;
+	height: 100%;
+	transform: rotate(0.3deg);
+	transform-origin: right bottom;
+	/* box-shadow: -2px 0px 15px 8px hsla(157, 43%, 49%, 0.37); */
+}
+.overpass2 {
+	position: absolute;
+	z-index: 1;
+	/* background-color: hsla(40deg, 3%, 83%, 0.95); */
+	background-image: linear-gradient(
+		170deg,
+		hsla(201, 32%, 91%, 0.8) 0%,
+		hsla(203, 25%, 90%, 0.9) 100%
+	);
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 160px;
+	transform: rotate(0.3deg);
+	transform-origin: left bottom;
+	/* box-shadow: 0px -2px 15px 8px hsla(157, 43%, 49%, 0.37); */
+}
+
+.overpass1 .border {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -1000px;
+	height: 2000px;
+	width: 5px;
+	background-image: linear-gradient(120deg, #d5fc79e3 0%, #96e6a1e3 100%);
+}
+.overpass2 .border {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -1000px;
+	width: 2000px;
+	height: 5px;
+	background-image: linear-gradient(120deg, #d4fc79e3 0%, #96e6a1e3 100%);
+}
